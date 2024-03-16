@@ -7,7 +7,7 @@ resource "aws_rds_cluster" "aurora_postgres" {
   engine              = "aurora-postgresql"
   engine_version      = "15.4"
   database_name       = "techchallenge"
-  master_username     = "var.user_name"
-  master_password     = "var.password"
+  master_username     = "teste" #TODO
+  master_password     = "teste" #TODO
   skip_final_snapshot = true
 }
