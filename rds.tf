@@ -1,8 +1,5 @@
 provider "aws" {
   region = "us-east-1"
-  assume_role {
-    role_arn = "arn:aws:iam::058264138215:role/LabRole"
-  }
 }
 
 resource "aws_rds_cluster" "aurora_postgres" {
