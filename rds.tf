@@ -11,3 +11,12 @@ resource "aws_rds_cluster" "aurora_postgres" {
   master_password     = "teste123" #TODO
   skip_final_snapshot = true
 }
+
+resource "aws_elasticache_cluster" "redis" {
+  cluster_id           = "techchallenge-redis"
+  engine               = "redis"
+  node_type            = "cache.t2.micro"
+  num_cache_nodes      = 1
+  parameter_group_name = "default.redis6.x"
+  port                 = 6379
+}
