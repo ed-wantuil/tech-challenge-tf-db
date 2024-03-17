@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_rds_cluster" "postgres_db" {
+resource "aws_db_instance" "postgres_db" {
   identifier             = "postgres-db-instance"
   engine                 = "postgres"
   engine_version         = "15.4"
