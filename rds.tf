@@ -10,12 +10,5 @@ resource "aws_rds_cluster" "aurora_postgres" {
   master_username     = var.master_username
   master_password     = var.master_password
   skip_final_snapshot = true
-}
-
-resource "aws_elasticache_cluster" "redis" {
-  cluster_id           = "techchallenge-redis"
-  engine               = "redis"
-  node_type            = "cache.t2.micro"
-  num_cache_nodes      = 1
-  parameter_group_name = "default.redis7"
+  vpc_security_group_ids = ["sg-0afbb6ab8e72f0925"]
 }
