@@ -6,7 +6,7 @@ Este repositório é dedicado ao armazenamento e gerenciamento do CI/CD para a i
 
 A documentação principal do projeto está disponível em [Tech Challenge Backend](https://github.com/ed-wantuil/tech-challenge-backend).
 
-![API Gateway Architecture](./doc/rds.png)
+![API Gateway Architecture](./doc/aws-rds.png)
 
 ## Recursos AWS Provisionados via Terraform
 
